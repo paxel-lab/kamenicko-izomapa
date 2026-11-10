@@ -1,0 +1,196 @@
+[
+ {
+  "name": "zámek Kamenice",
+  "lat": 49.898284,
+  "lon": 14.584056,
+  "text": "",
+  "slozka": "zamek-kamenice",
+  "poi_id": "p57d7hmtqeb4ctah2wsmyzs6x98ga0e1",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Kostel s. Františka Serafínského",
+  "lat": 49.898535,
+  "lon": 14.582862,
+  "text": "",
+  "slozka": "kostel-sv-frantiska",
+  "poi_id": "p575r67wp09stwv4jfhjm6yfgs8gc3fb",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Ringhofferova hrobka",
+  "lat": 49.89820322889635,
+  "lon": 14.57202898758,
+  "text": "",
+  "slozka": "hrobka-ringhoffera",
+  "poi_id": "p5700ycmzywemmcjtv9zd1f7xh8gbqcn",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Kostel Kostelec u Křížků",
+  "lat": 49.90986580608202,
+  "lon": 14.562984832488198,
+  "text": "",
+  "slozka": "kostel-sv-martina",
+  "poi_id": "p572gt8tebjkq8mbjqyhn5b7r18gca4n",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Obecní úřad a kulturní centrum Kamenice",
+  "lat": 49.9042,
+  "lon": 14.58728,
+  "text": "",
+  "slozka": "obecni-urad",
+  "zdroj": "OSM (návrh)"
+ },
+ {
+  "name": "zámek Olešovice",
+  "lat": 49.90531368014074,
+  "lon": 14.589501143050672,
+  "text": "",
+  "slozka": "zamek-olesovice",
+  "poi_id": "p57by6rsscfdye31ty9atfcb7n8gbh77",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "zámek Štiřín",
+  "lat": 49.916549707487,
+  "lon": 14.599168302665365,
+  "text": "",
+  "slozka": "zamek-stirin",
+  "poi_id": "p57cqh1yyzjze9bhewvkcyf0998ga4jy",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Rozhledna Ládví",
+  "lat": 49.8869,
+  "lon": 14.61256,
+  "text": "",
+  "slozka": "rozhledna-ladvi",
+  "zdroj": "OSM (návrh)"
+ },
+ {
+  "name": "Rozhledna Vlková",
+  "lat": 49.88578,
+  "lon": 14.60303,
+  "text": "",
+  "slozka": "rozhledna-vlkova",
+  "zdroj": "OSM (návrh)"
+ },
+ {
+  "name": "Židovský hřbitov Kostelec u Křížků",
+  "lat": 49.90841,
+  "lon": 14.55311,
+  "text": "",
+  "slozka": "zidovsky-hrbitov",
+  "zdroj": "OSM (návrh)"
+ },
+ {
+  "name": "Hotel Valnovka",
+  "lat": 49.89801333966022,
+  "lon": 14.603244526341681,
+  "text": "",
+  "slozka": "hotel-valnovka",
+  "poi_id": "p57461e77hjz4ex2jrfybffabh8hk19t",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Zimní altán u zámku",
+  "lat": 49.898211,
+  "lon": 14.584192,
+  "text": "",
+  "slozka": "zimni-altan-u-zamku",
+  "poi_id": "p571689y815m4prw4e4e5wnf2h8hgr6f",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Komín ve staré továrně nahoře",
+  "lat": 49.899026,
+  "lon": 14.585123,
+  "text": "",
+  "slozka": "komin-ve-stare-tovarne-nahore",
+  "poi_id": "p571dt3paqmrewwqahexky4z8h8hg47y",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Dům - vrátnice",
+  "lat": 49.898683,
+  "lon": 14.584478,
+  "text": "",
+  "slozka": "dum-vratnice",
+  "poi_id": "p57afhgsjxbabrfjwfre7jys9h8hhy8h",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Hostinec Struhařov",
+  "lat": 49.909575015858195,
+  "lon": 14.59772696830698,
+  "text": "",
+  "slozka": "hostinec-struharov",
+  "poi_id": "p57d2xf3r54vbxzckbka533t218gjq2c",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Opičárna",
+  "lat": 49.898915,
+  "lon": 14.583522,
+  "text": "",
+  "slozka": "opicarna",
+  "poi_id": "p577vtm0dh903zzcc3rdebf21n8gcams",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Koupaliště Struhařov",
+  "lat": 49.91012801013276,
+  "lon": 14.6000578725243,
+  "text": "",
+  "slozka": "koupaliste-struharov",
+  "poi_id": "p571w7s811hn0bzbe2yqdx58a18gc7w1",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Škola Kamenice",
+  "lat": 49.901470357761625,
+  "lon": 14.582078257622952,
+  "text": "",
+  "slozka": "skola-kamenice",
+  "poi_id": "p57d7ata0cs6z8nprafb04z9898gct6j",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Nákupní středisko Nová Hospoda",
+  "lat": 49.91047103792415,
+  "lon": 14.585161458630134,
+  "text": "",
+  "slozka": "nakupni-stredisko-nova-hospoda",
+  "poi_id": "p5741qra2ew1t7ypf0w5crvebs8gb443",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Hostinec Nová Hospoda",
+  "lat": 49.91060248787995,
+  "lon": 14.58409395810132,
+  "text": "",
+  "slozka": "hostinec-nova-hospoda",
+  "poi_id": "p5746ttv6re33s4h40hw1nmxah8ga87k",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Mlýn (pekárna) Olešovice",
+  "lat": 49.902295850912665,
+  "lon": 14.595155850289128,
+  "text": "",
+  "slozka": "mlyn-pekarna-olesovice",
+  "poi_id": "p57bg8xrp9wetvrmq4bx8725v18gaqtg",
+  "zdroj": "pohlednice.app"
+ },
+ {
+  "name": "Hostinec Hvězda",
+  "lat": 49.90533789602012,
+  "lon": 14.590428694390647,
+  "text": "",
+  "slozka": "hostinec-hvezda",
+  "poi_id": "p579aqbcr1ehy00w45jq8v3wr18gbb9e",
+  "zdroj": "pohlednice.app"
+ }
+]

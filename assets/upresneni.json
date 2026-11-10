@@ -1,0 +1,29 @@
+{
+  "b": {},
+  "roofs": [],
+  "paved": [],
+  "buses": [],
+  "stada": [
+    {
+      "typ": "kone",
+      "lat": 49.8992431,
+      "lon": 14.5782475,
+      "pocet": 4,
+      "radius": 35
+    },
+    {
+      "typ": "srnky",
+      "lat": 49.8954847,
+      "lon": 14.5939642,
+      "pocet": 8,
+      "radius": 60
+    },
+    {
+      "typ": "srnky",
+      "lat": 49.9024942,
+      "lon": 14.540975,
+      "pocet": 8,
+      "radius": 60
+    }
+  ]
+}

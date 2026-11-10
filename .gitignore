@@ -16,17 +16,9 @@ assets/dmp_vysky.json
 assets/strechy_orto.json
 assets/hrebeny.json
 
-# konfigurace tvého města (python novy_mesto.py); ukázka je v priklady/mesto.json
-/mesto.json
+# Kamenice: mesto.json, obce/ a vlastní úpravy města se commitují; mista.json (Pavlovy texty) ne
 /mista.json
-/obce/
 
-# vlastní úpravy konkrétního města (ukázky jsou v priklady/)
-assets/custom_prep.py
-assets/custom_models.js
-assets/upresneni.json
-assets/dominanty.json
-assets/oblasti.json
 
 # hlášení: vlastní konfigurace a hesla serveru
 /wrangler.jsonc
