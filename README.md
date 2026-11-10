@@ -1,3 +1,18 @@
+# Izometrická Kamenice (fork nástroje izomapa)
+
+Izometrická pixel-art mapa dnešní Kamenice a okolí (okres Praha-východ), postavená nástrojem
+[izomapa](https://github.com/adamklatovsky/izomapa) od [Adama Klatovského](https://www.adamklatovsky.cz/).
+Tento repozitář je fork s nastavením obce Kamenice (`mesto.json`, `assets/`), nad nástrojem se mění jen patička
+(odkaz „Zdrojový kód“) a vlastní úpravy města přes hooky `assets/custom_prep.py` a `assets/custom_models.js`.
+
+- **Licence kódu:** AGPL-3.0-or-later (soubor `LICENSE`).
+- **Zdroje dat:** OpenStreetMap/Overture Maps (ODbL), ČÚZK (DMP 1G, ortofoto, ZABAGED; CC BY 4.0), Terrarium (AWS Open Data).
+  Podrobnosti jsou v tabulce „Data a licence“ níže a v patičce mapy.
+- **Vlastní texty a fotografie Pavla Mejšnera nejsou pod AGPL**, všechna práva vyhrazena. Do repa nepatří (`mista.json`, `fotky/`).
+- **Stav:** zatím neveřejné, ve výstavbě.
+
+---
+
 # izomapa
 
 Izometrická pixel-art mapa českého města z otevřených dat, ve stylu SimCity 2000. Celé město s budovami, výškami
