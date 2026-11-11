@@ -24,8 +24,8 @@ Tento repozitář je fork s nastavením obce Kamenice (`mesto.json`, `assets/`),
   z jedné IP: blokace 10 s); WAF `izomapa-hotlink` (`/tiles/` s neprázdným Refererem bez `mapovna.app`: blokace).
   Transform Rule `izomapa-hlavicky` zůstává (jen `X-Robots-Tag` a `tdm-reservation`, žádné `X-Frame-Options`).
   Dosud neověřeno: `cf-cache-status` (MISS, pak HIT) a vložení do iframe, dokud je izomapa za Access
-  (ověří se v I5c). Dlaždice nahrané dřív mají na R2 starou hlavičku `max-age=86400`, nová dostanou jen
-  nově nahrané soubory.
+  (ověří se v I5c). Hlavičky všech souborů na R2 jsou sjednocené (`./nahrat.sh -f` znovu nahraje vše,
+  použít po změně pravidel hlaviček).
 
 ---
 
