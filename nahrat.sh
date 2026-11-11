@@ -1,6 +1,7 @@
 #!/bin/sh
 # Nahraje složku site/ do Cloudflare R2 (bucket mapovna-izomapa) přes rclone (S3 API).
 #   ./nahrat.sh -n     zkouška: jen vypíše, co by se nahrálo a smazalo, nic neposílá
+#   ./nahrat.sh -f     znovu nahraje VŠE (i nezměněné), aby se na R2 obnovily hlavičky Cache-Control
 #   ./nahrat.sh        nahraje změněné soubory (porovnává kontrolní součty, takže po opravách
 #                      jde nahoru jen to, co se změnilo), smaže na R2 soubory, které v site/ nejsou,
 #                      a vyčistí mezipaměť Cloudflare pro izo.mapovna.app
@@ -22,7 +23,11 @@ ENVFILE="${IZO_CF_ENV:-$HOME/.config/izomapa/cloudflare.env}"
 [ -f site/index.html ] || { echo "site/index.html neexistuje, nejdřív ./postav.sh"; exit 1; }
 command -v rclone >/dev/null 2>&1 || { echo "rclone není nainstalovaný (winget install Rclone.Rclone)"; exit 1; }
 rclone listremotes | grep -qx "$REMOTE:" || { echo "rclone nemá vzdálené úložiště '$REMOTE' (rclone config)"; exit 1; }
-DRY=""; [ "$1" = "-n" ] && DRY="--dry-run" && echo "ZKOUŠKA: nic se neodešle"
+DRY=""; FORCE=""
+for A in "$@"; do
+  [ "$A" = "-n" ] && DRY="--dry-run" && echo "ZKOUŠKA: nic se neodešle"
+  [ "$A" = "-f" ] && FORCE="-I" && echo "Vynucené nahrání všeho (obnova hlaviček)"
+done
 [ -f site/plakat-1200.webp ] || echo "Pozor: chybí plakáty site/plakat-*.webp (python nastroje/plakat.py)"
 
 # rclone nastaví Content-Type podle přípony (.webp, .png, .json, .html); R2 nezná výchozí index.html,
@@ -30,7 +35,7 @@ DRY=""; [ "$1" = "-n" ] && DRY="--dry-run" && echo "ZKOUŠKA: nic se neodešle"
 # Obrázky (.webp, .png) se mění jen při novém renderu: týden v prohlížeči. Web a data (.html, .json): 10 minut.
 # Ostatní (.jpg, .svg, .webmanifest…): den. Cache Rule v Cloudflare drží okraj déle, po nahrání se čistí.
 ZMENY="$(mktemp)"; trap 'rm -f "$ZMENY"' EXIT
-COMMON="--s3-no-check-bucket --checksum --transfers 32 --checkers 64 --fast-list --stats 10s --stats-one-line $DRY"
+COMMON="--s3-no-check-bucket --checksum --transfers 32 --checkers 64 --fast-list --stats 10s --stats-one-line $FORCE $DRY"
 # --combined: seznam změn (+ nový, * změněný, - smazaný), pro případné čištění po souborech
 rclone sync site "$REMOTE:$BUCKET" $COMMON --combined "$ZMENY.a" \
   --exclude "*.html" --exclude "*.json" --exclude "robots.txt" --exclude "*.webp" --exclude "*.png" \
