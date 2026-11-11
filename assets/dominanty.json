@@ -16,6 +16,8 @@
   "lon": 14.582862,
   "text": "",
   "slozka": "kostel-sv-frantiska",
+  "nazev": "Kostel sv. Františka Serafínského",
+  "typ": "kostel",
   "poi_id": "p575r67wp09stwv4jfhjm6yfgs8gc3fb",
   "zdroj": "pohlednice.app"
  },
@@ -25,6 +27,8 @@
   "lon": 14.57202898758,
   "text": "",
   "slozka": "hrobka-ringhoffera",
+  "nazev": "Ringhofferova hrobka",
+  "typ": "hrobka",
   "poi_id": "p5700ycmzywemmcjtv9zd1f7xh8gbqcn",
   "zdroj": "pohlednice.app"
  },
@@ -34,6 +38,8 @@
   "lon": 14.562984832488198,
   "text": "",
   "slozka": "kostel-sv-martina",
+  "nazev": "Kostel sv. Martina",
+  "typ": "kostel",
   "poi_id": "p572gt8tebjkq8mbjqyhn5b7r18gca4n",
   "zdroj": "pohlednice.app"
  },
@@ -43,6 +49,8 @@
   "lon": 14.58728,
   "text": "",
   "slozka": "obecni-urad",
+  "nazev": "Obecní úřad a kulturní centrum Kamenice",
+  "typ": "obecní úřad",
   "zdroj": "OSM (návrh)"
  },
  {
@@ -51,6 +59,8 @@
   "lon": 14.589501143050672,
   "text": "",
   "slozka": "zamek-olesovice",
+  "nazev": "Zámek Olešovice",
+  "typ": "zámek",
   "poi_id": "p57by6rsscfdye31ty9atfcb7n8gbh77",
   "zdroj": "pohlednice.app"
  },
@@ -60,6 +70,8 @@
   "lon": 14.599168302665365,
   "text": "",
   "slozka": "zamek-stirin",
+  "nazev": "Zámek Štiřín",
+  "typ": "zámek",
   "poi_id": "p57cqh1yyzjze9bhewvkcyf0998ga4jy",
   "zdroj": "pohlednice.app"
  },
@@ -93,6 +105,8 @@
   "lon": 14.603244526341681,
   "text": "",
   "slozka": "hotel-valnovka",
+  "nazev": "Hotel Valnovka",
+  "typ": "hotel",
   "poi_id": "p57461e77hjz4ex2jrfybffabh8hk19t",
   "zdroj": "pohlednice.app"
  },
@@ -120,6 +134,8 @@
   "lon": 14.584478,
   "text": "",
   "slozka": "dum-vratnice",
+  "nazev": "Dům – vrátnice",
+  "typ": "vrátnice",
   "poi_id": "p57afhgsjxbabrfjwfre7jys9h8hhy8h",
   "zdroj": "pohlednice.app"
  },
@@ -129,6 +145,8 @@
   "lon": 14.59772696830698,
   "text": "",
   "slozka": "hostinec-struharov",
+  "nazev": "Hostinec Struhařov",
+  "typ": "hostinec",
   "poi_id": "p57d2xf3r54vbxzckbka533t218gjq2c",
   "zdroj": "pohlednice.app"
  },
@@ -156,6 +174,8 @@
   "lon": 14.582078257622952,
   "text": "",
   "slozka": "skola-kamenice",
+  "nazev": "Škola Kamenice",
+  "typ": "škola",
   "poi_id": "p57d7ata0cs6z8nprafb04z9898gct6j",
   "zdroj": "pohlednice.app"
  },
@@ -165,6 +185,8 @@
   "lon": 14.585161458630134,
   "text": "",
   "slozka": "nakupni-stredisko-nova-hospoda",
+  "nazev": "Nákupní středisko Nová Hospoda",
+  "typ": "nákupní středisko",
   "poi_id": "p5741qra2ew1t7ypf0w5crvebs8gb443",
   "zdroj": "pohlednice.app"
  },
@@ -174,6 +196,8 @@
   "lon": 14.58409395810132,
   "text": "",
   "slozka": "hostinec-nova-hospoda",
+  "nazev": "Hostinec Nová Hospoda",
+  "typ": "hostinec",
   "poi_id": "p5746ttv6re33s4h40hw1nmxah8ga87k",
   "zdroj": "pohlednice.app"
  },
@@ -183,6 +207,8 @@
   "lon": 14.595155850289128,
   "text": "",
   "slozka": "mlyn-pekarna-olesovice",
+  "nazev": "Mlýn (pekárna) Olešovice",
+  "typ": "mlýn",
   "poi_id": "p57bg8xrp9wetvrmq4bx8725v18gaqtg",
   "zdroj": "pohlednice.app"
  },
