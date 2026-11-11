@@ -19,6 +19,10 @@
    0
   ],
   [
+   -1,
+   1
+  ],
+  [
    0,
    0
   ],
@@ -43,5 +47,6 @@
   "zdroj_url": "https://pid.cz/o-systemu/opendata/"
  },
  "vanocni_strom": null,
- "potoky": true
+ "potoky": true,
+ "letadla": true
 }

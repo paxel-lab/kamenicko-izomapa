@@ -1,0 +1,10 @@
+{
+  // Worker pro letadla v mapě; nasazení: cd letadla && npx wrangler deploy (po npx wrangler login).
+  // Bez tajných klíčů (adsb.lol je bez klíče, ODbL).
+  // "Request limit failure mode" = Fail open se nastavuje v dashboardu Cloudflare (Workers Routes), ne tady.
+  "name": "izomapa-letadla",
+  "main": "worker.js",
+  "compatibility_date": "2025-09-01",
+  "workers_dev": false,
+  "routes": [{ "pattern": "izo.mapovna.app/api/flights*", "zone_name": "mapovna.app" }]
+}
