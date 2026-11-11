@@ -9,7 +9,11 @@ Tento repozitář je fork s nastavením obce Kamenice (`mesto.json`, `assets/`),
 - **Zdroje dat:** OpenStreetMap/Overture Maps (ODbL), ČÚZK (DMP 1G, ortofoto, ZABAGED; CC BY 4.0), Terrarium (AWS Open Data).
   Podrobnosti jsou v tabulce „Data a licence“ níže a v patičce mapy.
 - **Vlastní texty a fotografie Pavla Mejšnera nejsou pod AGPL**, všechna práva vyhrazena. Do repa nepatří (`mista.json`, `fotky/`).
-- **Stav:** zatím neveřejné, ve výstavbě.
+- **Stav:** zatím neveřejné, ve výstavbě. Mapa běží na `https://izo.mapovna.app` (Cloudflare R2, bucket
+  `mapovna-izomapa`) za Cloudflare Access, přístup má jen vlastník (jednorázový kód e-mailem). Hlavičky
+  `X-Robots-Tag: noindex, nofollow` a `tdm-reservation: 1` a přepis `/` na `/index.html` jsou pravidla
+  v Cloudflare (Transform Rules). Nahrání provádí `nahrat.sh` (rclone, vzdálené úložiště `izo`; klíče jsou
+  jen v lokální konfiguraci rclone, nikdy v repu).
 
 ---
 
