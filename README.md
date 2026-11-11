@@ -14,6 +14,18 @@ Tento repozitář je fork s nastavením obce Kamenice (`mesto.json`, `assets/`),
   `X-Robots-Tag: noindex, nofollow` a `tdm-reservation: 1` a přepis `/` na `/index.html` jsou pravidla
   v Cloudflare (Transform Rules). Nahrání provádí `nahrat.sh` (rclone, vzdálené úložiště `izo`; klíče jsou
   jen v lokální konfiguraci rclone, nikdy v repu).
+- **Příprava na veřejný web map (I5a, 11. 11. 2026):** postup po stavbě je `./postav.sh`, `python nastroje/plakat.py`
+  (plakáty `site/plakat-1200|1600|2400.webp`, 62 / 114 / 260 kB), `./nahrat.sh`. `nahrat.sh` nastavuje
+  `Cache-Control` (`*.webp`, `*.png` týden, `*.json`, `*.html` 10 minut, ostatní den) a po nahrání čistí
+  mezipaměť `izo.mapovna.app` přes Cloudflare API (`CF_ZONE_ID`, `CF_PURGE_TOKEN` v
+  `~/.config/izomapa/cloudflare.env`, mimo repo). Pravidla v Cloudflare na zóně `mapovna.app`: Cache Rules
+  `izomapa-cache` (`*.webp`, `*.png`, Edge TTL 30 dní) a `izomapa-cache-data` (`*.json`, `*.html`, 10 minut),
+  oba mimo `/api/`, Browser TTL podle původu; Rate limiting `izomapa-rate-limit` (nad 300 požadavků za 10 s
+  z jedné IP: blokace 10 s); WAF `izomapa-hotlink` (`/tiles/` s neprázdným Refererem bez `mapovna.app`: blokace).
+  Transform Rule `izomapa-hlavicky` zůstává (jen `X-Robots-Tag` a `tdm-reservation`, žádné `X-Frame-Options`).
+  Dosud neověřeno: `cf-cache-status` (MISS, pak HIT) a vložení do iframe, dokud je izomapa za Access
+  (ověří se v I5c). Dlaždice nahrané dřív mají na R2 starou hlavičku `max-age=86400`, nová dostanou jen
+  nově nahrané soubory.
 
 ---
 
